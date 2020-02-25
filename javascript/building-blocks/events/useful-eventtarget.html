@@ -17,7 +17,7 @@
       for(let i = 1; i <= 16; i++) {
         const myDiv = document.createElement('div');
         document.body.appendChild(myDiv);
-      }
+      }//添加16个div
 
       function random(number) {
         return Math.floor(Math.random() * number);
@@ -28,12 +28,12 @@
         return rndCol;
       }
 
-      const divs = document.querySelectorAll('div');
+      const divs = document.querySelectorAll('div');//获取所有的div放入数组中
 
       for(let i = 0; i < divs.length; i++) {
         divs[i].onclick = function(e) {
           e.target.style.backgroundColor = bgChange();
-        }
+        }//为每一个div创建onclick属性 并定义函数功能
       }
     </script>
   </body>
